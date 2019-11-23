@@ -1,0 +1,63 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+ {
+
+int arr[20],n,mid,ele,i;
+clrscr();
+printf("\nHow many elements:");
+
+scanf("%d",&n);
+printf("%d",n);
+printf("\nEnter the elememts in sorted manner:");
+
+for(i=0;i<n;i++)
+{
+scanf("%d",&arr[i]);
+}
+// pankaj sharma
+for(i=0;i<n;i++)
+{
+printf("%d",arr[i]);
+printf(" ");
+}
+printf("\nEnter the element to be searched for:");
+scanf("%d",&ele);
+printf("%d",ele);
+mid=n/2;
+if(ele<=arr[n-1])
+{
+if(arr[mid]>ele)
+{    
+      for(i=0;i<mid;i++)
+     {  
+      if(arr[i]==ele)
+      {
+       printf("\n\nPosition=%d",i);
+       break;
+      }
+     }
+}
+else if(arr[mid]<ele)
+{
+    for(i=mid;i<n;i++)
+    {   
+     if(arr[i]==ele)
+      {
+       printf("\n\nPosition=%d",i);
+       break;
+      }
+    
+    }
+}
+else 
+
+printf("\n\nPosition=%d",mid);
+
+}
+else
+printf("\nNo such element exists");
+ return 0;
+}
+getch();
+}
