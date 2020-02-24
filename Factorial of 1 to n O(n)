@@ -1,0 +1,11 @@
+#include<stdio.h>
+void main()
+{
+   int range ,i,fact=1;
+   prinf("enter range of nummber ");
+   scanf("%d",&range);
+   for(i=1;i<=range;i++)
+   { fact=fact*i;
+   perintf("factorial of %d is =%d",i,fact);
+   }
+}
