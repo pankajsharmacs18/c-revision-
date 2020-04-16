@@ -1,0 +1,15 @@
+#include<Stdio.h>
+#define pankajSharma main
+void pankajSharma()
+{
+	int a,b;
+	int *c=&a,*d=&b;
+	printf("enter two numbet : ");
+	scanf("%d%d",c,d);
+	printf("bEFORE SWAPPINT a== %d,b==  %d and theier address is respectivly %d   %d ",*c,*d,c,d);
+	*c=*c+*d;
+	*d=*c-*d;
+	*c=*c-*d;
+	printf("\n bEFORE SWAPPINT a== %d,b==  %d and theier address is respectivly %d\t%d ",*c,*d,c,d);
+
+}
