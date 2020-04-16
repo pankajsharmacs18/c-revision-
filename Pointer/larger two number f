@@ -1,0 +1,23 @@
+#include<Stdio.h>
+#define pankajSharma main
+int pankajSharma()
+{
+	int a,b;
+	int *c=&a,*d=&b;
+	printf("enter two numbet : ");
+	scanf("%d%d",c,d);
+	printf("bEFORE SWAPPINT a== %d,b==  %d and theier address is respectivly %d   %d ",*c,*d,c,d);
+if(*c>*d)
+{
+	printf("%d is gretter : ",*c);
+}
+else if(*c<*d)
+{
+	printf("%d is gretter : ",*d);
+}
+else
+{
+	printf("Both are equal ");
+}
+return 0;
+}
