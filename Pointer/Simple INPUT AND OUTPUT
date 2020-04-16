@@ -1,0 +1,9 @@
+#include<Stdio.h>
+void main()
+{
+	int a,b;
+	int *c=&a,*d=&b;
+	printf("enter two numbet : ");
+	scanf("%d%d",c,d);
+	printf("%d,%d",*d,*c);
+}
