@@ -1,0 +1,14 @@
+#include<Stdio.h>
+void main()
+{
+	int a,b;
+	int *c=&a,*d=&b;
+	printf("enter two numbet : ");
+	scanf("%d%d",c,d);
+	printf("bEFORE SWAPPINT a== %d,b==  %d",*c,*d);
+	*c=*c+*d;
+	*d=*c-*d;
+	*c=*c-*d;
+	printf("\n aftr  SWAPPINT a== %d,b==  %d",*c,*d);
+
+}
