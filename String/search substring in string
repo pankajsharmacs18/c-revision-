@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+int main()
+{
+	char s[50],se[20];
+	int j,i,n1,n2;
+	printf("Enter 1st string : ");
+		gets(s);
+	printf("Enter string to be search : ");
+	gets(se);
+	printf("\n First string is %s: ",s);
+	printf("\n String to be search %s : ",se);
+	n1=strlen(s);
+	n2=strlen(se);
+	int flag=1;
+	for(i=0;i<=n1-n2;i++)
+	{  	flag=1;
+		for(j=0;j<n2;j++)
+		{
+			if(se[j]!=s[j+i])
+			{
+			flag=0;
+			break;	
+			}
+		}
+		if(flag==1)
+		{
+			printf("Present");
+		}
+		
+	}
+	
+}
